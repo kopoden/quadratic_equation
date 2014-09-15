@@ -8,7 +8,7 @@ This program solves [linear](https://en.wikipedia.org/wiki/Linear_equation) and 
 ###The First Step
 
 Firstly, the program will ask you about a [degree of the equation](https://en.wikipedia.org/wiki/Degree_of_a_polynomial).  
-Currently it can solves only linear and quadratic equation.  
+Currently it can solves only linear and quadratic equations.  
 
 If you have the equation of one of these types input "2" (without the quotes).  
 
