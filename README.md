@@ -1,11 +1,15 @@
 #Quadratic Equation
--------------
 
 This program solves [linear](https://en.wikipedia.org/wiki/Linear_equation) and [quadratic equations](https://en.wikipedia.org/wiki/Quadratic_equation).
 
 ##Short Guide
-------------
+
 ###The First Step
+
+######Warning!
+
+***Please, do not enter any letters and numbers(except of coefficients), which are***  
+***greater than 10. In this case program will be finished immediately.***
 
 Firstly, the program will ask you about a [degree of the equation](https://en.wikipedia.org/wiki/Degree_of_a_polynomial).  
 Currently it can solves only linear and quadratic equations.  
