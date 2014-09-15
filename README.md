@@ -16,9 +16,9 @@ Currently it can solves only linear and quadratic equations.
 
 If you have the equation of one of these types input "2" (without the quotes).  
 
-If you have a degree, that is more than 2, program sends you a message:  
-
-***This program can't solve so difficult equations.***
+If the degree of equation is more than 2, program sends you a message:  
+***"This program can't solve so difficult equations."***  
+and suggests to enter new data.
 
 ------------
 ###The Second Step
@@ -39,9 +39,10 @@ At the result the program can show you three types of messages:
 
 ###Reusing
 
-- If you want to close program write "0"  
-- If you want to solve one more equation write "1"  
-(without a quotes, of course)
+- If you want to close program write: 0 
+- If you want to solve one more equation write: 1
+- If you want to continue and to clear the screen, write: 2
+(maybe the last function available only for Windows users) 
 
 -------------
 ###Contacts
