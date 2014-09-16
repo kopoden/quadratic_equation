@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <math.h>
-#include <windows.h>
+
+//Funtion, clearing the console window
+
+void clear_console() {
+    
+    int i;
+
+    for (i = 0; i < 20; i++)
+      printf("\n\n\n\n\n");
+}
 
 //Function, defining the case, when the number of solutions is infinite
 
@@ -78,7 +87,7 @@ int main() {
     
     while (flag != 0) {
         if (flag == 2)
-            system("cls");
+            clear_console();
         flag = 0;
         printf("Input degree of equation( >=2 )\n");
         scanf("%d", &degree);
