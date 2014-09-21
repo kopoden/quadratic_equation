@@ -35,14 +35,14 @@ At the result the program can show you three types of messages:
 
 1. The equation has no solutions.
 2. The equation has an infinite number of solutions.  
-3. You will see one or two roots.  
+3. You will see the only solution or two roots.  
 
 ###Reusing
+Finally, program will ask you about one more equation.
 
 - If you want to close program write: 0 
 - If you want to solve one more equation write: 1
 - If you want to continue and to clear the screen, write: 2
-(maybe the last function available only for Windows users) 
 
 -------------
 ###Contacts
