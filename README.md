@@ -8,22 +8,9 @@ This program solves [linear](https://en.wikipedia.org/wiki/Linear_equation) and 
 
 ######Warning!
 
-***Please, do not enter any letters and numbers(except of coefficients), which are***  
-***greater than 10. In this case program will be finished immediately.***
+***Please, do not enter any letters! In this case program will be finished immediately.***
 
-Firstly, the program will ask you about a [degree of the equation](https://en.wikipedia.org/wiki/Degree_of_a_polynomial).  
-Currently it can solves only linear and quadratic equations.  
-
-If you have the equation of one of these types input "2" (without the quotes).  
-
-If the degree of equation is more than 2, program sends you a message:  
-***"This program can't solve so difficult equations."***  
-and suggests to enter new data.
-
-------------
-###The Second Step
-
-Then you will be asked to enter the coefficients of the equation.
+Firstly, you will be asked to enter the coefficients of the equation.
 
 **Input format:** "A B C"  
 
