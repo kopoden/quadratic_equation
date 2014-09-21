@@ -5,16 +5,14 @@
 
 void clear_console() {
     
-    int i;
-
-    for (i = 0; i < 20; i++)
+    for (int i = 0; i < 20; i++)
       printf("\n\n\n\n\n");
 }
 
 //Function, defining the case, when the number of solutions is infinite
 
 bool check_infinity(double* coef, double* ans) {
-    if ((coef[0] == 0) and (coef[1] == 0) and (coef[2] == 0))
+    if ((coef[0] == 0) && (coef[1] == 0) && (coef[2] == 0))
         return true;
 
     else;
@@ -34,12 +32,12 @@ int solve_equation (double* coef, double* ans) {
     if (coef[2] == 0) {
         
 //       There aren't any solutions
-        if ((coef[1] == 0) and (coef[0] != 0)) {
+        if ((coef[1] == 0) && (coef[0] != 0)) {
             num_of_x = 0;
         }
 
 //       There is the only solution
-        if ((coef[1] != 0) and (coef[0] != 0)) {
+        if ((coef[1] != 0) && (coef[0] != 0)) {
             num_of_x = 1;
             ans[0] = (-coef[0])/coef[1];
         }
@@ -83,24 +81,27 @@ int main() {
     double coef[MAX_DEGREE + 1], ans[MAX_DEGREE];
     
     // flag defines if it's necessary to restart the program
-    int flag = 1;
+    // 0 - finish programm
+    // 1 - restart programm
+    // 2 - clear screen and restart
+    int restart_and_clear_marker = 1;
     
-    while (flag != 0) {
-        if (flag == 2)
+    while (restart_and_clear_marker != 0) {
+        if (restart_and_clear_marker == 2)
             clear_console();
-        flag = 0;
+        restart_and_clear_marker = 0;
         printf("Input degree of equation( >=2 )\n");
         scanf("%d", &degree);
     
     //  Incorrect degree
-        if ((degree < 2) or (degree > 10)) {
+        if (degree < 2) {
             printf("%s", "You have entered an incorrect degree.\n");
-            printf("%s", "Please, read a guide(it's in repository) and try later.\n");
+            printf("%s", "Please, read a guide(it's in repository) and try again.\n");
             return 0;
         }
     
     //  Degree is greater than 2
-        if ((degree > 2) and (degree < 11))
+        if (degree > 2)
             printf("%s", "This program can't solve so difficult equations.\n");
     
     //  Degree 2
@@ -134,7 +135,7 @@ int main() {
         printf("%s", "0 - No\n");
         printf("%s", "1 - Yes\n");
         printf("%s", "2 - Yes, clear the screen, please.\n");
-        scanf("%d", &flag);
+        scanf("%d", &restart_and_clear_marker);
     }
 
 return 0;
