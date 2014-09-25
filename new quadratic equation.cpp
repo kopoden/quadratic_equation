@@ -1,15 +1,18 @@
+
+/*! @file "new quadratic equation.cpp"
+    @brief File of main program.
+*/
+
 #include <stdio.h>
 #include <math.h>
-#include "quadratic equation.h"
+#include "new quadratic equation.h"
 
 int main() {
 
-    // It's necessary only to set array's sizes.
+    // It's neccessary only to set array's sizes
     int const MAX_DEGREE = 2;
 
     double coef[MAX_DEGREE + 1], ans[MAX_DEGREE];
-
-    // restart_and_clear_marker defines if it's necessary to restart the program
 
     int restart_and_clear_marker = CONTINUE;
 

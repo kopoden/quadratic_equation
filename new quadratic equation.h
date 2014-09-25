@@ -1,8 +1,59 @@
-enum results {NO_SOLUTIONS, ONE_ROOT, TWO_ROOTS, INFINITE};
+/*! @file "new quadratic equation.h"
+    @brief Library file.
 
-enum choice {FINISH, CONTINUE, CLEAR_AND_CONTINUE};
+    IT CONTAINS ALL FUNCTIONS, USING IN MAIN PROGRAM
 
-enum format {CORRECT, INCORRECT};
+    FUNCTIONS IN LIBRARY:
+
+    clear_console();
+
+    restart();
+
+    input_data();
+
+    solve_equation();
+
+*/
+
+/*! \enum results
+    Contains all possible values returned by function solve_equation.
+*/
+
+enum results {
+    NO_SOLUTIONS, ///< == solve_equation(), if there aren't any solutions.
+    ONE_ROOT, ///< == solve_equation(), if there is the only root.
+    TWO_ROOTS, ///< == solve_equation(), if there are two answers.
+    INFINITE ///< == solve_equation(), if the number of answers is infinite.
+    };
+
+/*! \enum choice
+    Contains all possible values returned by function restart.
+*/
+
+enum choice {
+    FINISH, ///< == restart(), if user wants to close the program
+    CONTINUE, ///< == restart(), if user wants to continue
+    CLEAR_AND_CONTINUE ///< == restart(), if user wants to clear the screen and continue
+    };
+
+/*! \enum format
+    Contains all possible values returned by function input_data.
+*/
+
+enum format {
+    CORRECT, ///< == input_data(), reports about correct input data.
+    INCORRECT ///< == input_data(), reports about incorrect input data.
+    };
+
+/*! @fn int input_data (double* arrayOfCoefficients)
+    @brief Inputs coefficients and checks data
+
+    RETURNS:
+
+    \b CORRECT if data format is correct
+
+    \b INCORRECT  if data format is wrong
+*/
 
 int input_data (double* coef) {
 
@@ -15,12 +66,29 @@ int input_data (double* coef) {
         return INCORRECT;
 }
 
-//Function, solving equation of these types: 1) Ax^2+Bx+C=0
-//                                           2) Bx+C=0
+/*! @fn int solve_equation (double* ArrayOfCoefficients, double* ArrayOfAnswers)
+    @brief Find roots and the number of them
+
+   Function, solving equation of these types:
+   <ol>
+    <li> Ax^2 + Bx + C = 0
+    <li> Bx + C = 0
+   </ol>
+
+   RETURNS THE NUMBER OF SOLUTIONS:
+
+   <ol>
+    <li> \b NO_SOLUTIONS
+    <li> \b ONE_ROOT
+    <li> \b TWO_ROOTS
+    <li> \b INFINITE
+   </ol>
+*/
+
 int solve_equation (double* coef, double* ans) {
 
-    int num_of_x;
-    double D, sqrtD;
+    int num_of_x; //number of answers
+    double D, sqrtD; // discriminant and its square root
 
 //  Linear equation
     if (coef[2] == 0) {
@@ -69,6 +137,13 @@ int solve_equation (double* coef, double* ans) {
     return num_of_x;
 }
 
+/*! @fn void output_res(int numberOfSolutions, double* ArrayOfAnswers)
+    @brief Shows result on the screen
+
+    @param numberOfSolutions Number of roots counted with function solve_equation.
+    @param ArrayOfAnswers
+*/
+
 void output_res(int num_of_solutions, double* ans) {
 
     //      Infinite number of solutions.
@@ -93,12 +168,27 @@ void output_res(int num_of_solutions, double* ans) {
     }
 }
 
-//Function, clearing the console window
+/*! @fn void clear_console()
+    @brief Function, clearing the console window
+*/
+
 void clear_console() {
 
     for (int i = 0; i < 20; i++)
       printf("\n\n\n\n\n");
 }
+
+/*! @fn int restart()
+    @brief Function, asking user to restart or close program
+
+    RETURNS:
+    <ol>
+     <li> \b FINISH (if user has entered '0')
+     <li> \b CONTINUE (if user has entered '1')
+     <li> \b CLEAR_AND_CONTINUE (if user has entered '2')
+    </ol>
+
+*/
 
 int restart() {
     int input_num;
@@ -108,6 +198,8 @@ int restart() {
     printf("%s", "0 - No\n");
     printf("%s", "1 - Yes\n");
     printf("%s", "2 - Yes, clear the screen, please.\n");
+
     scanf("%d", &input_num);
+
     return input_num;
 }
