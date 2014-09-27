@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['input_5fdata',['input_data',['../new_01quadratic_01equation_8h.html#af3b55523ac2705a69409800237557f4a',1,'new quadratic equation.h']]]
+  ['input_5fdata',['input_data',['../new__quadratic__equation_8h.html#a572cee73ef4da7aa5c3dcbfb3b97df75',1,'new_quadratic_equation.h']]]
 ];
