@@ -61,7 +61,23 @@ you can use these [contacts](https://github.com/kopoden/iLab-local/wiki/Contacts
 
 #include <stdio.h>
 #include <math.h>
-#include "new_quadratic_equation.h"
+#include <stdlib.h>
+#include "library_quadratic_equation.h"
+
+
+//////////////////////////////////////////////////////////////
+#ifdef DEBUG
+#define ASSERT( cond ) if ( ! ( cond ) ) { \
+    printf ( "FAIL %s in %s, %s ( %d )", \
+    #cond, __PRETTY_FUNCTION__, \
+    __FILE__, __LINE__ ); \
+    abort(); \
+}
+#else
+#define ASSERT( cond ) ;
+#endif
+
+///////////////////MAIN FUNCTION///////////////////////////
 
 int main() {
 
@@ -81,14 +97,18 @@ int main() {
 
         printf("%s\n", "Please, enter coefficients.");
 
-        int num_of_entered = 0;
+        int num_of_entered = 0; // amount of correctly entered values
 
         while (num_of_entered < MAX_DEGREE + 1) {
+
+            ASSERT(((MAX_DEGREE - num_of_entered) >= 0) && ((MAX_DEGREE - num_of_entered) <= MAX_DEGREE)) ;
 
             int check_input = input_data(coef, MAX_DEGREE - num_of_entered);
             if (check_input == CORRECT)
                 num_of_entered++;
         }
+
+        ASSERT (MAX_DEGREE >= 2);
 
         int num_of_solutions = solve_equation (coef, ans);
         output_res(num_of_solutions, ans);
