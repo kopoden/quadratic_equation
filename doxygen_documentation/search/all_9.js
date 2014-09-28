@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['two_5froots',['TWO_ROOTS',['../new_01quadratic_01equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a876622d3c0b008da13a3685c64714e81',1,'TWO_ROOTS():&#160;new quadratic equation.h'],['../quadratic_01equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a876622d3c0b008da13a3685c64714e81',1,'TWO_ROOTS():&#160;quadratic equation.h']]]
+  ['solve_5fequation',['solve_equation',['../library__quadratic__equation_8cpp.html#a2de11d6c08beee1b2197b1edb89e985e',1,'solve_equation(const double coef[], double ans[]):&#160;library_quadratic_equation.cpp'],['../library__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e',1,'solve_equation(const double coef[], double ans[]):&#160;library_quadratic_equation.cpp']]]
 ];

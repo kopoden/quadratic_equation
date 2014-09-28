@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>quadratic-equation: C:/Users/Денис/Desktop/C,C++/quadratic equation/new_quadratic_equation.h File Reference</title>
+<title>quadratic-equation: C:/Users/Денис/Desktop/C,C++/quadratic equation/library_quadratic_equation.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,83 +88,87 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">new_quadratic_equation.h File Reference</div>  </div>
+<div class="title">library_quadratic_equation.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Library file.  
+<p>Library Header.  
 <a href="#details">More...</a></p>
-
-<p><a href="new__quadratic__equation_8h_source.html">Go to the source code of this file.</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="library__quadratic__equation_8cpp.html">library_quadratic_equation.cpp</a>&quot;</code><br />
+</div>
+<p><a href="library__quadratic__equation_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a339bb5524b06e496a6aaa0a97a4a8d21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="new__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21">results</a> { <a class="el" href="new__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a7ba2733ae0b3f049b4fcd4afedd9b980">NO_SOLUTIONS</a>, 
-<a class="el" href="new__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a6700c0f6efd23571cb22aefd2510b1cf">ONE_ROOT</a>, 
-<a class="el" href="new__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a876622d3c0b008da13a3685c64714e81">TWO_ROOTS</a>, 
-<a class="el" href="new__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a6a1459101774b7f68e084098fa8bacbb">INFINITE</a>
+<tr class="memitem:a339bb5524b06e496a6aaa0a97a4a8d21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21">results</a> { <a class="el" href="library__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a7ba2733ae0b3f049b4fcd4afedd9b980">NO_SOLUTIONS</a>, 
+<a class="el" href="library__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a6700c0f6efd23571cb22aefd2510b1cf">ONE_ROOT</a>, 
+<a class="el" href="library__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a876622d3c0b008da13a3685c64714e81">TWO_ROOTS</a>, 
+<a class="el" href="library__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21a6a1459101774b7f68e084098fa8bacbb">INFINITE</a>
  }</td></tr>
 <tr class="separator:a339bb5524b06e496a6aaa0a97a4a8d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd05e88e13762e173d9d20fe3596216f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="new__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216f">choice</a> { <a class="el" href="new__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216fa8b9af67858708d770f017e4aae85900d">FINISH</a>, 
-<a class="el" href="new__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216fa49959dd441dcda75d6898cf2c68fb374">CONTINUE</a>, 
-<a class="el" href="new__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216fad744a944e752fa5ff9a44c1461723167">CLEAR_AND_CONTINUE</a>, 
-<a class="el" href="new__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216fa9937037cba6b8333e81bc8c9d0185b5e">INCORRECT_FORMAT</a>
+<tr class="memitem:afd05e88e13762e173d9d20fe3596216f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216f">choice</a> { <a class="el" href="library__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216fa8b9af67858708d770f017e4aae85900d">FINISH</a>, 
+<a class="el" href="library__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216fa49959dd441dcda75d6898cf2c68fb374">CONTINUE</a>, 
+<a class="el" href="library__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216fad744a944e752fa5ff9a44c1461723167">CLEAR_AND_CONTINUE</a>, 
+<a class="el" href="library__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216fa9937037cba6b8333e81bc8c9d0185b5e">INCORRECT_FORMAT</a>
  }</td></tr>
 <tr class="separator:afd05e88e13762e173d9d20fe3596216f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a387137c43ed9616d39ba90e890d181eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="new__quadratic__equation_8h.html#a387137c43ed9616d39ba90e890d181eb">format</a> { <a class="el" href="new__quadratic__equation_8h.html#a387137c43ed9616d39ba90e890d181ebab58a0b1d4be8cd01c0e89e899a888e35">CORRECT</a>, 
-<a class="el" href="new__quadratic__equation_8h.html#a387137c43ed9616d39ba90e890d181eba193defd0ec6376c4513834400f2dc33f">INCORRECT</a>
+<tr class="memitem:a387137c43ed9616d39ba90e890d181eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library__quadratic__equation_8h.html#a387137c43ed9616d39ba90e890d181eb">format</a> { <a class="el" href="library__quadratic__equation_8h.html#a387137c43ed9616d39ba90e890d181ebab58a0b1d4be8cd01c0e89e899a888e35">CORRECT</a>, 
+<a class="el" href="library__quadratic__equation_8h.html#a387137c43ed9616d39ba90e890d181eba193defd0ec6376c4513834400f2dc33f">INCORRECT</a>
  }</td></tr>
 <tr class="separator:a387137c43ed9616d39ba90e890d181eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a572cee73ef4da7aa5c3dcbfb3b97df75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="new__quadratic__equation_8h.html#a572cee73ef4da7aa5c3dcbfb3b97df75">input_data</a> (double coef[], const int coeffNum)</td></tr>
+<tr class="memitem:a572cee73ef4da7aa5c3dcbfb3b97df75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library__quadratic__equation_8h.html#a572cee73ef4da7aa5c3dcbfb3b97df75">input_data</a> (double coef[], const int coeffNum)</td></tr>
 <tr class="memdesc:a572cee73ef4da7aa5c3dcbfb3b97df75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inputs coefficients and checks data.  <a href="#a572cee73ef4da7aa5c3dcbfb3b97df75">More...</a><br /></td></tr>
 <tr class="separator:a572cee73ef4da7aa5c3dcbfb3b97df75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2de11d6c08beee1b2197b1edb89e985e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="new__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e">solve_equation</a> (const double coef[], double ans[])</td></tr>
+<tr class="memitem:a2de11d6c08beee1b2197b1edb89e985e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e">solve_equation</a> (const double coef[], double ans[])</td></tr>
 <tr class="memdesc:a2de11d6c08beee1b2197b1edb89e985e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find roots and the number of them.  <a href="#a2de11d6c08beee1b2197b1edb89e985e">More...</a><br /></td></tr>
 <tr class="separator:a2de11d6c08beee1b2197b1edb89e985e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a917c9d53306163d04ca9aefd1a10ae0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="new__quadratic__equation_8h.html#a917c9d53306163d04ca9aefd1a10ae0e">output_res</a> (const int num_of_solutions, const double ans[])</td></tr>
+<tr class="memitem:a917c9d53306163d04ca9aefd1a10ae0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library__quadratic__equation_8h.html#a917c9d53306163d04ca9aefd1a10ae0e">output_res</a> (const int num_of_solutions, const double ans[])</td></tr>
 <tr class="memdesc:a917c9d53306163d04ca9aefd1a10ae0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows result on the screen.  <a href="#a917c9d53306163d04ca9aefd1a10ae0e">More...</a><br /></td></tr>
 <tr class="separator:a917c9d53306163d04ca9aefd1a10ae0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cffe15b7e5d10a108f1734a9640a2c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="new__quadratic__equation_8h.html#a3cffe15b7e5d10a108f1734a9640a2c7">clear_console</a> ()</td></tr>
+<tr class="memitem:a3cffe15b7e5d10a108f1734a9640a2c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library__quadratic__equation_8h.html#a3cffe15b7e5d10a108f1734a9640a2c7">clear_console</a> ()</td></tr>
 <tr class="memdesc:a3cffe15b7e5d10a108f1734a9640a2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function, clearing the console window.  <a href="#a3cffe15b7e5d10a108f1734a9640a2c7">More...</a><br /></td></tr>
 <tr class="separator:a3cffe15b7e5d10a108f1734a9640a2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae246359e104d63520158c26329caac80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="new__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80">restart</a> ()</td></tr>
+<tr class="memitem:ae246359e104d63520158c26329caac80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80">restart</a> ()</td></tr>
 <tr class="memdesc:ae246359e104d63520158c26329caac80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function, asking user to restart or close program.  <a href="#ae246359e104d63520158c26329caac80">More...</a><br /></td></tr>
 <tr class="separator:ae246359e104d63520158c26329caac80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Library file. </p>
-<p>IT CONTAINS ALL FUNCTIONS, USING IN MAIN PROGRAM</p>
+<div class="textblock"><p>Library Header. </p>
+<p>IT CONTAINS HEADERS OF AL FUNCTIONS, USING IN MAIN PROGRAM</p>
 <p>FUNCTIONS IN LIBRARY:</p>
-<p><a class="el" href="new__quadratic__equation_8h.html#a3cffe15b7e5d10a108f1734a9640a2c7" title="Function, clearing the console window. ">clear_console()</a>;</p>
-<p><a class="el" href="new__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>;</p>
-<p><a class="el" href="new__quadratic__equation_8h.html#a572cee73ef4da7aa5c3dcbfb3b97df75" title="Inputs coefficients and checks data. ">input_data()</a>;</p>
-<p><a class="el" href="new__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>; </p>
+<p><a class="el" href="library__quadratic__equation_8h.html#a3cffe15b7e5d10a108f1734a9640a2c7" title="Function, clearing the console window. ">clear_console()</a>;</p>
+<p><a class="el" href="library__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>;</p>
+<p><a class="el" href="library__quadratic__equation_8h.html#a572cee73ef4da7aa5c3dcbfb3b97df75" title="Inputs coefficients and checks data. ">input_data()</a>;</p>
+<p><a class="el" href="library__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>; </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="afd05e88e13762e173d9d20fe3596216f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="new__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216f">choice</a></td>
+          <td class="memname">enum <a class="el" href="library__quadratic__equation_8h.html#afd05e88e13762e173d9d20fe3596216f">choice</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Contains all possible values returned by function restart. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="afd05e88e13762e173d9d20fe3596216fa8b9af67858708d770f017e4aae85900d"></a>FINISH&#160;</td><td class="fielddoc">
-<p>== <a class="el" href="new__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>, if user wants to close the program </p>
+<p>== <a class="el" href="library__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>, if user wants to close the program </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="afd05e88e13762e173d9d20fe3596216fa49959dd441dcda75d6898cf2c68fb374"></a>CONTINUE&#160;</td><td class="fielddoc">
-<p>== <a class="el" href="new__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>, if user wants to continue </p>
+<p>== <a class="el" href="library__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>, if user wants to continue </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="afd05e88e13762e173d9d20fe3596216fad744a944e752fa5ff9a44c1461723167"></a>CLEAR_AND_CONTINUE&#160;</td><td class="fielddoc">
-<p>== <a class="el" href="new__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>, if user wants to clear the screen and continue </p>
+<p>== <a class="el" href="library__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>, if user wants to clear the screen and continue </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="afd05e88e13762e173d9d20fe3596216fa9937037cba6b8333e81bc8c9d0185b5e"></a>INCORRECT_FORMAT&#160;</td><td class="fielddoc">
-<p>== <a class="el" href="new__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>, if user used incorrect format. </p>
+<p>== <a class="el" href="library__quadratic__equation_8h.html#ae246359e104d63520158c26329caac80" title="Function, asking user to restart or close program. ">restart()</a>, if user used incorrect format. </p>
 </td></tr>
 </table>
 
@@ -175,7 +179,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="new__quadratic__equation_8h.html#a387137c43ed9616d39ba90e890d181eb">format</a></td>
+          <td class="memname">enum <a class="el" href="library__quadratic__equation_8h.html#a387137c43ed9616d39ba90e890d181eb">format</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -196,23 +200,23 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="new__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21">results</a></td>
+          <td class="memname">enum <a class="el" href="library__quadratic__equation_8h.html#a339bb5524b06e496a6aaa0a97a4a8d21">results</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Contains all possible values returned by function solve_equation. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a339bb5524b06e496a6aaa0a97a4a8d21a7ba2733ae0b3f049b4fcd4afedd9b980"></a>NO_SOLUTIONS&#160;</td><td class="fielddoc">
-<p>== <a class="el" href="new__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>, if there aren't any solutions. </p>
+<p>== <a class="el" href="library__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>, if there aren't any solutions. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a339bb5524b06e496a6aaa0a97a4a8d21a6700c0f6efd23571cb22aefd2510b1cf"></a>ONE_ROOT&#160;</td><td class="fielddoc">
-<p>== <a class="el" href="new__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>, if there is the only root. </p>
+<p>== <a class="el" href="library__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>, if there is the only root. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a339bb5524b06e496a6aaa0a97a4a8d21a876622d3c0b008da13a3685c64714e81"></a>TWO_ROOTS&#160;</td><td class="fielddoc">
-<p>== <a class="el" href="new__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>, if there are two answers. </p>
+<p>== <a class="el" href="library__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>, if there are two answers. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a339bb5524b06e496a6aaa0a97a4a8d21a6a1459101774b7f68e084098fa8bacbb"></a>INFINITE&#160;</td><td class="fielddoc">
-<p>== <a class="el" href="new__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>, if the number of answers is infinite. </p>
+<p>== <a class="el" href="library__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>, if the number of answers is infinite. </p>
 </td></tr>
 </table>
 
@@ -244,7 +248,7 @@ Functions</h2></td></tr>
           <td class="memname">int input_data </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ArrayOfCoefficients</em>[], </td>
+          <td class="paramname"><em>coef</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -263,8 +267,8 @@ Functions</h2></td></tr>
 <p>Inputs coefficients and checks data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ArrayOfCoefficients</td><td></td></tr>
-    <tr><td class="paramname">coeffNum</td><td>amount of coefficients</td></tr>
+    <tr><td class="paramname">coef[]</td><td>Array Of Coefficients </td></tr>
+    <tr><td class="paramname">coeffNum</td><td>Amount of coefficients</td></tr>
   </table>
   </dd>
 </dl>
@@ -282,13 +286,13 @@ Functions</h2></td></tr>
           <td class="memname">void output_res </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>numberOfSolutions</em>, </td>
+          <td class="paramname"><em>num_of_solutions</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>ArrayOfAnswers</em>[]&#160;</td>
+          <td class="paramname"><em>ans</em>[]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,8 +305,8 @@ Functions</h2></td></tr>
 <p>Shows result on the screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">numberOfSolutions</td><td>Number of roots counted with function solve_equation. </td></tr>
-    <tr><td class="paramname">ArrayOfAnswers</td><td></td></tr>
+    <tr><td class="paramname">num_of_solutions</td><td>Number of roots counted with the function <a class="el" href="library__quadratic__equation_8h.html#a2de11d6c08beee1b2197b1edb89e985e" title="Find roots and the number of them. ">solve_equation()</a>. </td></tr>
+    <tr><td class="paramname">ans[]</td><td>Array Of Answers </td></tr>
   </table>
   </dd>
 </dl>
@@ -342,13 +346,13 @@ Functions</h2></td></tr>
           <td class="memname">int solve_equation </td>
           <td>(</td>
           <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>ArrayOfCoefficients</em>[], </td>
+          <td class="paramname"><em>coef</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ArrayOfAnswers</em>[]&#160;</td>
+          <td class="paramname"><em>ans</em>[]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -361,17 +365,17 @@ Functions</h2></td></tr>
 <p>Find roots and the number of them. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ArrayOfCoefficients</td><td></td></tr>
-    <tr><td class="paramname">ArrayOfAnswers</td><td>Function, solving equation of these types: <ol>
+    <tr><td class="paramname">coef[]</td><td>Array of Coefficients </td></tr>
+    <tr><td class="paramname">ans[]</td><td>Array of Answers</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Function, solving equation of these types: </p><ol>
 <li>
 Ax^2 + Bx + C = 0 </li>
 <li>
 Bx + C = 0 </li>
 </ol>
-</td></tr>
-  </table>
-  </dd>
-</dl>
 <p>RETURNS THE NUMBER OF SOLUTIONS:</p>
 <ol>
 <li>
@@ -389,7 +393,7 @@ Bx + C = 0 </li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 27 2014 15:18:56 for quadratic-equation by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 28 2014 15:39:22 for quadratic-equation by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
