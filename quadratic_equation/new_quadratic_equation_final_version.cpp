@@ -55,13 +55,14 @@ you can use these [contacts](https://github.com/kopoden/iLab-local/wiki/Contacts
 */
 
 
-/*! @file "new_quadratic_equation.cpp"
+/*! @file "new_quadratic_equation_final_version.cpp"
     @brief File of main program.
 */
 
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+
 #include "library_quadratic_equation.h"
 
 

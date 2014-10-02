@@ -16,6 +16,12 @@
 
 */
 
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+#include "library_quadratic_equation.h"
+
 ////////////////////////////////////////////////////////////
 
 int input_data (double coef[], const int coeffNum ) {
@@ -42,8 +48,8 @@ int input_data (double coef[], const int coeffNum ) {
 
 int solve_equation (const double coef[], double ans[]) {
 
-    int num_of_x; //number of answers
-    double D, sqrtD; // discriminant and its square root
+    int num_of_x = 0; //number of answers
+    double D = 0, sqrtD = 0; // discriminant and its square root
 
 //  Linear equation
     if (coef[2] == 0) {

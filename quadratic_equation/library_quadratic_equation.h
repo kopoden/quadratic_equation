@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-
 /*! @file "library_quadratic_equation.h"
     @brief Library Header.
 
@@ -16,6 +12,8 @@
     input_data();
 
     solve_equation();
+
+    output_res();
 
 */
 
@@ -49,11 +47,11 @@ enum format {
     INCORRECT ///<  reports about incorrect input format.
     };
 
-/*! @fn int input_data (double ArrayOfCoefficients[], const int coeffNum)
+/*! @fn int input_data (double coef[], const int coeffNum)
     @brief Inputs coefficients and checks data
 
-    @param ArrayOfCoefficients
-    @param coeffNum  amount of coefficients
+    @param coef    Array of coefficients
+    @param coeffNum  Amount of coefficients
 
     RETURNS:
 
@@ -64,11 +62,11 @@ enum format {
 
 int input_data (double coef[], const int coeffNum );
 
-/*! @fn int solve_equation (const double ArrayOfCoefficients[], double ArrayOfAnswers[])
+/*! @fn int solve_equation (const double coef[], double ans[])
     @brief Find roots and the number of them
 
-    @param ArrayOfCoefficients
-    @param ArrayOfAnswers
+    @param coef  Array Of Coefficients
+    @param ans    Array O fAnswers
 
    Function, solving equation of these types:
    <ol>
@@ -88,11 +86,11 @@ int input_data (double coef[], const int coeffNum );
 
 int solve_equation (const double coef[], double ans[]);
 
-/*! @fn void output_res(const int numberOfSolutions, const double ArrayOfAnswers[])
+/*! @fn void output_res(const int num_of_solutions, const double ans[])
     @brief Shows result on the screen
 
-    @param numberOfSolutions Number of roots counted with function solve_equation.
-    @param ArrayOfAnswers
+    @param num_of_solutions   Number of roots counted with function solve_equation.
+    @param ans                ArrayOfAnswers
 */
 
 void output_res (const int num_of_solutions, const double ans[]);
@@ -117,4 +115,4 @@ void clear_console();
 
 int restart();
 
-#include "library_quadratic_equation.cpp"
+
